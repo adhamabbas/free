@@ -20,4 +20,4 @@ COPY . .
 EXPOSE 9900
 
 # أمر التشغيل الافتراضي لتشغيل الخادم
-CMD ["node", "server.js"]
+CMD ["node", "app.js"]
