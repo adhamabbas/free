@@ -44,8 +44,6 @@ exports.createUserValidator = [
     .notEmpty()
     .withMessage('Password confirmation required'),
 
-  check('role').optional(),
-
   validatorMiddleware,
 ];
 

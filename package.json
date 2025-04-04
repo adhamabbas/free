@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "start:dev": "nodemon app.js",
-    "build": "node app.js"
+    "start": "node app.js"
   },
   "keywords": [],
   "author": "",
@@ -25,6 +25,7 @@
     "jsonwebtoken": "^9.0.2",
     "mongoose": "^6.0.13",
     "morgan": "^1.10.0",
+    "openai": "^4.91.1",
     "slugify": "^1.6.3",
     "xlsx": "^0.18.5",
     "xlsx-style": "^0.8.13"

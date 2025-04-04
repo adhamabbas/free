@@ -17,7 +17,7 @@ RUN npm install --production
 COPY . .
 
 # تعيين المنفذ الذي سيستمع عليه التطبيق
-EXPOSE 9900
+EXPOSE 12000
 
 # أمر التشغيل الافتراضي لتشغيل الخادم
-CMD ["node", "server.js"]
+CMD ["node", "app.js"]
