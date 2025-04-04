@@ -1,6 +1,6 @@
-// services/openaiService.js
-import OpenAI from "openai";
-import "dotenv/config";
+// services/AIservece.js
+const OpenAI = require("openai");
+require("dotenv").config();
 
 const openai = new OpenAI({
   apiKey: process.env.OPENAI_API_KEY,
@@ -11,7 +11,7 @@ const openai = new OpenAI({
  * @param {string} prompt - The user's input message
  * @returns {Promise<string>} - The AI's response
  */
-export async function generateChatCompletion(prompt) {
+const generateChatCompletion = async (prompt) => {
   try {
     const completion = await openai.chat.completions.create({
       model: "gpt-4o-mini",
@@ -25,4 +25,6 @@ export async function generateChatCompletion(prompt) {
     console.error("Error generating chat completion:", error);
     throw error;
   }
-}
+};
+
+module.exports = { generateChatCompletion };
