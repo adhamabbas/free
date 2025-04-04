@@ -1,6 +1,5 @@
-// routes/aiRoutes.js
 const express = require("express");
-const { generateChatCompletion } = require("../services/AIservece");
+const { generateChatCompletion } = require("../services/AIservece.js");
 
 const router = express.Router();
 
